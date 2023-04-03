@@ -1,0 +1,13 @@
+span {
+  margin: 0 5px;
+}
+
+.HeroList {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.Hero {
+
+}
