@@ -85,7 +85,7 @@ heroes.push({
 heroes.push({
     name: 'Madoka',
     race: 'Human',
-    class: [{name: 'Warlock', subclass: '?', level: NaN}],
+    class: [{name: 'Warlock', subclass: '?', level: 5}],
     background: {name: '?', description: 'Pretty normal person, doesn\'t even know she\'s a Magical Girl.'},
     alignment: ['lawful', 'good'],
     hitPoints: 8,
@@ -107,7 +107,15 @@ heroes.push({
         {name: 'Mage Armor', effects: ['1/day', 'Duration: 8h'], description: 'Part of magical girl transformation.'},
         {name: 'Disguise Self', effects: ['at will'], description: 'Part of magical girl transformation.'},
         {name: 'Eldritch Invocation', effects: ['Mask of Many Faces', 'Improved Pact Weapon', 'Eldritch Smite'], description: ''},
-        {name: 'Meta Magic', effects: ['Quick Spell', '?'], description: ''}
+        {name: 'Meta Magic', effects: ['Quick Spell', '?'], description: 'Used to quicken Transformation'},
+        {
+            name: 'Pact Magic', effects: [
+                '0Eldritch Blast', '0Minor Illusion', '0Prestidigitation',
+                '1Charm Person', '1Hex', '1Witch Bolt',
+                '2Hold Person',
+                '3Remove Curse', 'Fly'
+            ], description: 'Cantrips: 3, Spells: 6'
+        }
     ]
 });
 
