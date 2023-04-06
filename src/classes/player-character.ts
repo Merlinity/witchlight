@@ -43,12 +43,12 @@ export class Class {
 }
 
 export class Stats {
-    str: number = 0;
-    dex: number = 0;
-    con: number = 0;
-    int: number = 0;
-    wis: number = 0;
-    cha: number = 0;
+    str: string = '0';
+    dex: string = '0';
+    con: string = '0';
+    int: string = '0';
+    wis: string = '0';
+    cha: string = '0';
 }
 
 export class Background {
