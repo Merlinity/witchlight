@@ -86,7 +86,7 @@ heroes.push({
     name: 'Madoka',
     race: 'Human',
     class: [{name: 'Warlock', subclass: '?', level: 5}],
-    background: {name: '?', description: 'Pretty normal person, doesn\'t even know she\'s a Magical Girl.'},
+    background: {name: '?', description: 'Pretty normal person, didn\'t even know she\'s a Magical Girl at Lv. 1.'},
     alignment: ['lawful', 'good'],
     hitPoints: 8,
     defenses: [{boost: 13, name: 'Mage Armor', type: 'ac', description: 'Only in combination with Disguise self.'}],
@@ -100,11 +100,22 @@ heroes.push({
         },
         {
             name: 'Eldritch Blast', type: 'spell',
-            damage: [{amount: 1, dice: 8, damageType: DamageType.FORCE}], description: 'Shot from the bow.'
+            damage: [{amount: 1, dice: 8, damageType: DamageType.FORCE}],
+            description: 'Shot from the bow, twice.'
+        },
+        {
+            name: 'Fire Bolt', type: 'spell',
+            damage: [{amount: 2, dice: 10, damageType: DamageType.FIRE}],
+            description: 'Shot from the bow. Ignites flammable objects.'
+        },
+        {
+            name: 'Ray of Frost', type: 'spell',
+            damage: [{amount: 2, dice: 8, damageType: DamageType.COLD}],
+            description: 'Shot from the bow. Reduces target\'s speed by 10ft.'
         }
     ],
     skills: [
-        {name: 'Mage Armor', effects: ['1/day', 'Duration: 8h'], description: 'Part of magical girl transformation.'},
+        {name: 'Mage Armor', effects: ['1/day', 'Duration: 8h'], description: 'Part of magical girl transformation. From Magic Initiate.'},
         {name: 'Disguise Self', effects: ['at will'], description: 'Part of magical girl transformation.'},
         {name: 'Eldritch Invocation', effects: ['Mask of Many Faces', 'Improved Pact Weapon', 'Eldritch Smite'], description: ''},
         {name: 'Meta Magic', effects: ['Quick Spell', '?'], description: 'Used to quicken Transformation'},
@@ -113,8 +124,15 @@ heroes.push({
                 '0Eldritch Blast', '0Minor Illusion', '0Prestidigitation',
                 '1Charm Person', '1Hex', '1Witch Bolt',
                 '2Hold Person',
-                '3Remove Curse', 'Fly'
+                '3Remove Curse', '3Fly'
             ], description: 'Cantrips: 3, Spells: 6'
+        },
+        {
+            name: 'Magic Initiate', effects: [
+                'Sorcerer',
+                '0Fire Bolt', '0Ray of Frost',
+                '1Mage Armor'
+            ], description: 'Two Cantrips plus one 1st Lv Spell.'
         }
     ]
 });
