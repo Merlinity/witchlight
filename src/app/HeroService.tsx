@@ -181,15 +181,15 @@ heroes.push({
         {name: 'Font of Magic', effects: ['2', '3', '5', '6', '7'], description: ''},
         {name: 'Meta Magic', effects: ['1Quick Spell', '1Distant Spell'], description: ''},
         {name: 'Elemental Adept', effects: ['Lightning'], description: ''},
-        {name: 'Spellcasting', effects: ['4', '3', '3']},
+        {name: 'Spellcasting', effects: ['4', '3', '3'], description: 'Spell slots.'},
         {name: 'Sorcerer Spells', effects: [
             '0Blade Ward', '0Mage Hand', '0Friends', '0Prestidigitation', '0True Strike',
             '1Chromatic Orb', '1Witch Bolt',
             '2Dragon\'s Breath',
             '3Lightning Bolt', '3Thunder Step', '3Haste'
         ]},
-//        {name: 'Cleric Spells', effects: ['0Resistance', '0Thaumaturgy', '0Guidance', '1Detect Magic', '1Detect Poison and Disease']},
-        {name: 'Channel divinity', effects: ['Max damage on one Lightning spell', '1/short rest']}
+        {name: 'TODO: Cleric Spells', effects: ['0Resistance', '0Thaumaturgy', '0Guidance', '1Detect Magic', '1Detect Poison and Disease']},
+        {name: 'TODO: Channel divinity', effects: ['Max damage on one Lightning spell', '1/short rest']}
     ]
 });
 
