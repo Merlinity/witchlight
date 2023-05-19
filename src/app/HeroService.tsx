@@ -194,6 +194,27 @@ heroes.push({
 });
 
 heroes.push({
+    name: 'Jack B',
+    race: 'Human',
+    class: [{name: 'Bard', level: 1}],
+    background: {
+        name: 'Entertainer',
+        description: 'When he prayed to his idol, saying "won\'t you come down from your throne?" they actually did come down' +
+            ' and told young Jack: "In the city of fallen angels you will find the secrets of your heart". And so, Jack' +
+            ' went on a journey to find said city.'
+    },
+    alignment: ['neutral', 'neutral'],
+    hitPoints: 8,
+    skills: [
+        {name: 'Powerslide', effects: []},
+        {name: 'Voice of Gold', effects: ['He just has a really good singing voice.']}
+    ],
+    additionalInfo: [
+        {heading: 'Age', info: 'like, 18 or 19'}
+    ]
+});
+
+heroes.push({
     name: 'Necromancin\' Dancer',
     race: 'Human',
     class: [{name: 'Bard', level: NaN}],
