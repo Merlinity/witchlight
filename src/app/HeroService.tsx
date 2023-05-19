@@ -193,6 +193,34 @@ heroes.push({
     ]
 });
 
+heroes.push({
+    name: 'Necromancin\' Dancer',
+    race: 'Human',
+    class: [{name: 'Bard', level: NaN}],
+    background: {
+        name: '???',
+        description: 'Well he\'s definitely a villain, but I don\'t think that counts as a background.'
+    },
+    alignment: ['chaotic', 'evil'],
+    personality: [
+        {
+            type: 'Trait',
+            description: 'Yeah, I\'m raising the dead~\nI\'m loving the dread~\nLet\'s make some evil!~'
+        }
+    ],
+    skills: [
+        {name: 'Spellcasting', effects: ['Otto\'s irresistable dance', 'Animate Dead', 'Create Undead', '']}
+    ],
+    additionalInfo: [
+        {info: 'When I\'m necromancing,\nEveryone\'s dancing\nNo one can stop me, I dare you to try.\nThe dead are infused with sensational groove\nAnd they\'re coming for you now, there\'s nowhere to hide!'},
+        {info: 'Yeah, I\'m raising the dead~\nThey rip and they shred~\nAnd make some evil~'}
+    ]
+    /*
+
+
+     */
+});
+
 export const HeroService = () => {
   return heroes;
 }
