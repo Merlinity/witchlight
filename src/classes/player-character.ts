@@ -59,7 +59,12 @@ export class Background {
 export class PersonalityTrait {
     description: string = '';
     /** (General) Trait, Ideal, Bond, Flaw, etc. */
-    type?: string;
+    type?: 'Trait' | 'Ideal' | 'Bond' | 'Flaw' | string;
+}
+
+class Additionalnfo {
+    heading?: string;
+    info: string = '';
 }
 
 export class PlayerCharacter {
@@ -73,6 +78,7 @@ export class PlayerCharacter {
             'evil' | 'neutral' | 'good'
     ];
     personality?: PersonalityTrait[];
+    additionalInfo?: Additionalnfo[];
     defenses?: DefenseSkill[];
     hitPoints?: number;
     attacks?: Attack[];
